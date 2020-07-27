@@ -1,0 +1,102 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Membuat Database</title>
+        <link rel="shortcut icon" href="assets/images/Icon.png" sizes="16x16" type="image/x-icon">
+        <link rel="stylesheet" href="assets/styles/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>Belajar Database MySQL</h1>
+            </div>
+            <script type="text/javascript" src="assets/js/nav.js"></script>
+        </header>
+        <main>
+            <article class="card">
+                <h2>Membuat Database dapat dilakukan dengan 2 cara :</h2>
+                <ol>
+                    <li><a href="#gui">GUI</a></li><br>
+                    <li><a href="#cli">CLI</a></li>
+                </ol>
+            </article>
+            <article id="gui"class="card">
+                <h3>GUI</h3>
+                <ol>
+                    <div>
+                        <li>Klik "Baru" pada halaman utama</li><br>
+                        <img class="feature-img scale-img border-black" src="assets/images/01. Membuat Database.PNG" alt="Membuat Database 01 GUI">
+                    </div>
+                    <div>
+                        <li>Berikan nama database lalu klik "Buat"</li><br>
+                        <img class="feature-img scale-img border-black" src="assets/images/02. Membuat Database.PNG" alt="Membuat Database 02 GUI">
+                        <img class="feature-img scale-img border-black" src="assets/images/03. Membuat Database.PNG" alt="Membuat Database 03 GUI">
+                        <p class="p-center">Hasil Pembuatan Database</p>
+                    </div>
+                    <div>
+                        <li>Buat Tabel. Masukkan nama tabel dan jumlah kolomnya</li><br>
+                        <img class="feature-img scale-img border-black" src="assets/images/04. Membuat Database.PNG" alt="Membuat Database 04 GUI">
+                    </div>
+                    <div>
+                        <li>Buat kolom dengan ketentuan sebagai berikut:</li><br>
+                        <ul class="ul-bullet">
+                            <li>"id" adalah kolom dengan tipe data Integer berukuran 5 yang berperan sebagai Primary Key, aktifkan Auto Increment supaya kolom id dapat diisi berurutan secara otomatis</li>
+                            <li>"nama" adalah kolom dengan tipe data Varchar berukuran 30</li>
+                            <li>"tanggal_lahir" adalah kolom dengan tipe data Date</li>
+                            <li>"jenis_kelamin" adalah kolom dengan tipe data Varchar berukuran 10</li>
+                            <li>"alamat" adalah kolom dengan tipe data Varchar brukuran 50</li>
+                        </ul>
+                        <img class="feature-img scale-img border-black" src="assets/images/05. Membuat Database.PNG" alt="Membuat Database 05 GUI">
+                        <img class="feature-img scale-img border-black" src="assets/images/06. Membuat Database.PNG" alt="Membuat Database 06 GUI">
+                        <p class="p-center">Hasil Pembuatan Tabel</p>
+                    </div>
+                </ol>
+            </article>
+            <article id="cli" class="card">
+                <h3>CLI</h3>
+                <ol>
+                    <div>
+                        <li>Buka Command Prompt</li><br>
+                        <img class="feature-img" src="assets/images/07. Membuat Database.png" alt="Membuat Database 01 CLI">
+                    </div>
+                    <div>
+                        <li>Arahkan ke direktori mysql/bin pada folder XAMPP</li><br>
+                        <img class="feature-img" src="assets/images/08. Membuat Database.png" alt="Membuat Database 02 CLI">
+                    </div>
+                    <div>
+                        <li>Ketik perintah "mysql -u root"</li><br>
+                        <img class="feature-img" src="assets/images/09. Membuat Database.png" alt="Membuat Database 03 CLI">
+                        <p class="p-center">Kita akan login dengan menggunakan user root</p>
+                    </div>
+                    <div>
+                        <li>Ketik perintah <i>CREATE DATABASE belajar_sql;</i></li><br>
+                        <img style="width: 423px;" class="feature-img" src="assets/images/10. Membuat Database.png" alt="Membuat Database 04 CLI">
+                    </div>
+                    <div>
+                        <li>Buat Tabel "biodata". Ketik perintah :</li><br>
+                        <div style="width: 400px; padding: 16px;" class="border-black">
+                            <i>
+                                CREATE TABLE biodata (<br>
+                                id INT(5) PRIMARY KEY AUTO_INCREMENT,<br>
+                                nama VARCHAR(30),<br>
+                                tanggal_lahir DATE,<br>
+                                jenis_kelamin VARCHAR(10),<br>
+                                alamat VARCHAR(50)<br>
+                                );
+                            </i>
+                        </div><br>
+                        <img style="width: 517px;" class="feature-img" src="assets/images/11. Membuat Database.png" alt="Membuat Database 05 CLI">
+                        <p class="p-center">Tabel berhasil dibuat</p>
+                    </div>
+                    <div>
+                        <li>Cek struktur tabel "biodata". Ketik perintah <i>DESC biodata;</i></li><br>
+                        <img class="feature-img" src="assets/images/12. Membuat Database.png" alt="Membuat Database 06 CLI">
+                    </div>
+                </ol>
+            </article>
+        </main>
+        <footer>
+            <h2>Belajar MySQL 2020</h2>
+        </footer>
+    </body>
+</html>

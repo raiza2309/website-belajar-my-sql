@@ -1,0 +1,61 @@
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Menambahkan Data pada Database</title>
+        <link rel="shortcut icon" href="assets/images/Icon.png" type="image/x-icon">
+        <link rel="stylesheet" href="assets/styles/style.css">
+    </head>
+    <body>
+        <header>
+            <div class="header-top">
+                <h1>Belajar Database MySQL</h1>
+            </div>
+            <script type="text/javascript" src="assets/js/nav.js"></script>
+        </header>
+        <main>
+            <article class="card">
+                <ol>
+                    <div>
+                        <li>Pilih Database <i>belajar_sql</i> dan tabel <i>biodata</i></li><br>
+                        <img class="feature-img scale-img border-black" src="assets/images/01. Menambahkan Data.PNG" alt="Menambahkan Data 01">
+                    </div>
+                    <div>
+                        <li>Klik menu SQL</li><br>
+                        <img class="feature-img scale-img border-black" src="assets/images/02. Menambahkan Data.PNG" alt="Menambahkan Data 02">
+                    </div>
+                    <div>
+                        <li>Ketikkan perintah berikut :</li><br>
+                        <div style="padding: 16px; width: 650px;" class="border-black">
+                            <i>
+                                INSERT INTO biodata (nama, tanggal_lahir, jenis_kelamin, alamat)<br>
+                                VALUES ("nama_anda", "1999-12-31", "jenis_kelamin_anda", "alamat_anda");<br>
+                            </i>
+                        </div><br>
+                        <img style="width: 483px;" class="feature-img border-black" src="assets/images/03. Menambahkan Data.PNG" alt="Menambahkan Data 03">
+                        <img style="width: 480px;" class="feature-img border-black" src="assets/images/04. Menambahkan Data.PNG" alt="Menambahkan Data 04">
+                        <p class="p-center">Data berhasil ditambahkan</p>
+                    </div>
+                    <div>
+                        <li>Tampilkan data. Ketik perintah :</li><br>
+                        <div style="padding: 16px; width: 500px;" class="border-black">
+                            <i>
+                                SELECT id, nama, tanggal_lahir, jenis_kelamin, alamat<br>
+                                FROM biodata;
+                            </i>
+                        </div>
+                        <p>Atau</p>
+                        <div style="padding: 16px; width: 500px;" class="border-black">
+                            <i>
+                                SELECT * FROM biodata;
+                            </i>
+                        </div><br>
+                        <img style="width: 716px;" class="feature-img border-black" src="assets/images/05. Menambahkan Data.PNG" alt="Menambahkan Data 05">
+                    </div>
+                </ol>
+            </article>
+        </main>
+        <footer>
+            <h2>Belajar SQL 2020</h2>
+        </footer>
+    </body>
+</html>
